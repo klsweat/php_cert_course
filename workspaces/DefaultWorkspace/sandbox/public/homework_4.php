@@ -44,7 +44,8 @@ function getElements($config, $name)
                 break;
 	    	case 'select':
                 $html .= "<div $divclass><select class=\"{$value['class']}\" name=\"{$value['name']}\">";
-		
+				
+				// Foreach option value in array, create an option element
 				foreach($value['options'] as $keyValue => $options){
 
 					$selected = ($options['innerText'] === '-- SELECT --') ? "selected = 'selected'" : "" ;				
@@ -52,19 +53,18 @@ function getElements($config, $name)
 				}
 		
 				$html .= "</select></div>";
-
                 break;
 
             case 'submit':
                 $html .= "<div $divclass><input type=\"{$value['type']}\" class=\"{$value['class']}\" value=\"{$value['value']}\"/></div>";
                 break;
         }
-	$html .= "<br>";
+		$html .= "<br>";
     }
     return $html;
 }
 
 
-
+// Added HTML tags so the selected statement would work
 echo '<html>' . getConfig("config.php") . '</html>';
 
