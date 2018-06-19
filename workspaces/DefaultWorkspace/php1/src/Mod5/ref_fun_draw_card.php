@@ -5,10 +5,11 @@ function drawCard(array &$deck){
     $suitKey = array_rand($deck);
     $suit = $deck[$suitKey];
     $cardKey = array_rand($suit);
-    $card = $suit[$cardKey];
+	$card = $suit[$cardKey];
     unset($deck[$suitKey][$cardKey]);
     return "$suitKey $card";
 }
 
 echo drawCard($stack);
-var_dump($stack);
+echo PHP_EOL;
+print_r($stack);

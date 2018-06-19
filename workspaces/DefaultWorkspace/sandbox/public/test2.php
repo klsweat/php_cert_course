@@ -1,11 +1,14 @@
 <?php
 $test = 0; 
 $control = 10; 
+
 echo "\n ------- \n";
+
 while($test++){
 	echo $test;
 	echo $control;
 	echo '<br>' . $control-- . ':' . $test . PHP_EOL;
+
 	If ($control === 0) {
 	echo $control;
 		break;		
