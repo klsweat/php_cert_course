@@ -46,7 +46,6 @@ function getElements($config, $name)
                 $html .= "<div $divclass><select class=\"{$value['class']}\" name=\"{$value['name']}\">";
 		
 				foreach($value['options'] as $keyValue => $options){
-
 					$selected = ($options['innerText'] === '-- SELECT --') ? "selected = 'selected'" : "" ;				
 					$html .= "<option {$selected} value=\"{$options['value']}\"> {$options['innerText']} </option>";
 				}
