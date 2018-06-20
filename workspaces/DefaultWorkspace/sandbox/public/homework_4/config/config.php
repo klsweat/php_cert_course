@@ -32,11 +32,11 @@ $configArray = [
                     'name' => 'selectFromDropdown',
                     'class' => '',
                     'id' => '',                    
-		    		'options' => [ 
-			 			$values[] = [ 'value' => ' ', 'innerText' => '-- SELECT --'],			
-			 			$values[] = [ 'value' => 'A', 'innerText' => 'A'],			
-			 			$values[] = [ 'value' => 'B', 'innerText' => 'B'],			
-			 			$values[] = [ 'value' => 'C', 'innerText' => 'C']			
+		    'options' => [ 
+			$values[] = [ 'value' => ' ', 'innerText' => '-- SELECT --'],			
+			$values[] = [ 'value' => 'A', 'innerText' => 'A'],			
+			$values[] = [ 'value' => 'B', 'innerText' => 'B'],			
+			$values[] = [ 'value' => 'C', 'innerText' => 'C']			
                     ]
                 ],
                 4 => [
