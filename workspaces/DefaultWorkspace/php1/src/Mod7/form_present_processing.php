@@ -7,7 +7,7 @@ if($_POST
     && $item = filter_var($_POST['item'], FILTER_SANITIZE_STRING)
     && $priority = filter_var($_POST['priority'], FILTER_VALIDATE_INT)){
     echo 'Data is validated ... and handled';
-    exit;
+    //exit;
 }
 
 // Get the form

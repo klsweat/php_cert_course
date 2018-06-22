@@ -70,4 +70,6 @@ for ($x = 5; $x < $max; $x++){
 
 // Removes Comma
 //echo substr($output, 0, -2);
+ $a=5 < 2;
+    echo (gettype($a));
 

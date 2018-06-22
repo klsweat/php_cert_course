@@ -59,7 +59,7 @@ function getElements($config, $name)
                 $html .= "<div $divclass><input type=\"{$value['type']}\" class=\"{$value['class']}\" value=\"{$value['value']}\"/></div>";
                 break;
         }
-		$html .= "<br>";
+
     }
     return $html;
 }
