@@ -4,4 +4,4 @@ require_once 'loginForm.php';
 $config = require 'config/config.php';
 
 // Get the form
-echo getForm($config, 'add_item');
+echo getForm($config, 'login');

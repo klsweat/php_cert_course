@@ -1,7 +1,7 @@
 <?php
 return [
     'forms' => [
-        'add_item' => [
+        'login' => [
             'name' => 'addChecklistItem',
             'id' => 'addChecklistItem',
             'class' => '',

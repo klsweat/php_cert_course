@@ -5,10 +5,11 @@ if($_POST){
 
 	$email = (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) ? "Email is valid: {$_POST['email']}" : 'Email is Invalid';
 	$username = (filter_var($_POST['username'], FILTER_SANITIZE_STRING)) ? "Username is valid: {$_POST['username']}" : 'Username is Invalid';	
-	$password = (filter_var($_POST['password'], FILTER_SANITIZE_STRING)) ? 'Password is valid' : 'Password is Invalid';
+	$password = $_POST['password'];
 
 
-	echo $email . '<br>';	
-	echo $username . '<br>'; 	
-	echo $password . '<br>';
+	// Scrub data with htmlspecialchars()
+	echo htmlspecialchars($email) . '<br>';	
+	echo htmlspecialchars($username) . '<br>'; 	
+	echo htmlspecialchars($password) . '<br>';
 } 
